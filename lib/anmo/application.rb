@@ -74,6 +74,10 @@ module Anmo
     def call(env)
       request = Rack::Request.new(env)
 
+      if request.path_info =~ /^\/status$/
+        return [200, {}, "ok"]
+      end
+
       if request.request_method.upcase == "OPTIONS"
         return [
           200,
