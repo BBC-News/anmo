@@ -3,7 +3,7 @@ $LOAD_PATH.push File.expand_path("../lib", __FILE__)
 require "anmo/version"
 
 Gem::Specification.new do |s|
-  s.name        = "anmo"
+  s.name        = "anmo2"
   s.version     = Anmo::VERSION
   s.authors     = ["Andrew Vos"]
   s.email       = ["andrew.vos@gmail.com"]
